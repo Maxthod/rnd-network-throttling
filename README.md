@@ -2,7 +2,19 @@
 Compare a thread-base vs event-base apps in term of performance for opening and closing http requests
 
 # Server
-The server is in nodejs. It throttles the requests based of the 'max' value
+The server is in nodejs. It throttles the requests based of the 'max' value.
+
+You can test a client by :
+1) You make a POST to register your test
+    url="/", json={
+        id, # a unique id client side generated
+        total # number of requests you plan to send
+    }
+2) You send GET requests until you reach your total
+    url="/id"
+3) You send a PUT to end your test. This will output the test results
+    url="/", json={id}
+    
 ## Install / run
 ```
 npm install
