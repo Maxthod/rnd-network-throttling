@@ -28,14 +28,14 @@ app.get('/:id', (req, res) => {
     const { id } = req.params
     const c = cache[id]
     c.count = c.count + 1
-    const wait = (cb, nieme) => {
+    const throttle = (cb, nieme) => {
         if (c.current > max) {
-            setTimeout(() => wait(cb, nieme), pause)
+            setTimeout(() => throttle(cb, nieme), pause)
         } else {
             cb()
         }
     }
-    wait(() => {
+    throttle(() => {
         c.current = c.current + 1
         setTimeout(() => {
             c.complete = c.complete + 1

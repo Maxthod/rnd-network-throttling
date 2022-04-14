@@ -23,15 +23,15 @@ app.get('/:id', function (req, res) {
     var id = req.params.id;
     var c = cache[id];
     c.count = c.count + 1;
-    var wait = function (cb, nieme) {
+    var throttle = function (cb, nieme) {
         if (c.current > max) {
-            setTimeout(function () { return wait(cb, nieme); }, pause);
+            setTimeout(function () { return throttle(cb, nieme); }, pause);
         }
         else {
             cb();
         }
     };
-    wait(function () {
+    throttle(function () {
         c.current = c.current + 1;
         setTimeout(function () {
             c.complete = c.complete + 1;
