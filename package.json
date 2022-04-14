@@ -1,21 +1,21 @@
 {
-  "name": "network-throttling",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^17.0.23",
-    "tsc": "^2.0.4"
-  },
-  "dependencies": {
-    "@types/axios": "^0.14.0",
-    "axios": "^0.26.1",
-    "express": "^4.17.3"
-  }
+    "name": "network-throttling",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^17.0.23",
+        "@types/axios": "^0.14.0",
+        "tsc": "^2.0.4"
+    },
+    "dependencies": {
+        "axios": "^0.26.1",
+        "express": "^4.17.3"
+    }
 }
