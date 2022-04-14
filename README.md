@@ -6,7 +6,7 @@ The server is in nodejs. It throttles the requests based of the 'max' value
 ## Install / run
 ```
 npm install
-tsc server/server.ts # if you want to recompile it the JS
+tsc server/server.ts # if you want to recompile the JS
 node server/server.js
 ```
 
@@ -15,7 +15,7 @@ One implementation in JavaScript
 ## Run JS client
 ```
 npm install
-tsc client/client.ts # if you want to recompile it the JS
+tsc client/client.ts # if you want to recompile the JS
 node client/client.js
 ```
 One implementation in Python
