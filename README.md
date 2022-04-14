@@ -15,8 +15,8 @@ One implementation in JavaScript
 ## Run JS client
 ```
 npm install
-tsc client.ts # if you want to recompile it the JS
-node client.js
+tsc client/client.ts # if you want to recompile it the JS
+node client/client.js
 ```
 One implementation in Python
 ## Run Python client
