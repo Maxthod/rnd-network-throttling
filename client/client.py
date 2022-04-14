@@ -30,14 +30,3 @@ with ThreadPoolExecutor() as executor:
         print(result.text)
     finish = delete()
     print(finish.text)  
-
-
-# executor = Executor()
-
-# for x in range(total):
-#   futures.append(executor.submit(get))
-
-# [future.result() for future in futures ]
-
-# finish = delete()
-# print(finish.text)
