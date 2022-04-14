@@ -24,3 +24,9 @@ One implementation in Python
 python client/client.py # Python 3
 ```
 
+# Results
+## JS 
+This took 5837ms for 1000 requests with delay 500ms. Theorical limit 5000. Performance 85%
+
+## Python
+This took 42418ms for 1000 requests with delay 500ms. Theorical limit 5000. Performance 11%
