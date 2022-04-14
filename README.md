@@ -31,15 +31,15 @@ node server/server.js
 ```
 
 # Clients
-One implementation in JavaScript
-## Run JS client
+
+## JavaScript
 ```
 npm install
 tsc client/client.ts # if you want to recompile the JS
 node client/client.js
 ```
-One implementation in Python
-## Run Python client
+
+## Python
 ```
 python client/client.py # Python 3
 ```
