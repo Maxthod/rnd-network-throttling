@@ -1,6 +1,10 @@
 # Objective
 Compare a thread-base vs event-base apps in term of performance for opening and closing http requests
 
+# Requirements (AKA works with)
+- Node 16
+- Python 3
+
 # Server
 The server is in nodejs. It throttles the requests based of the 'max' value.
 
